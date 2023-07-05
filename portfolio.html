@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jonathan Messer (portfolio)</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 30pt;
+        }
+        
+        #progress-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        
+        #progress {
+            font-size: 40pt;
+            font-family: "Comic Sans MS", cursive;
+            animation: rainbow 10s linear infinite, stretch 4s ease-in-out infinite;
+        }
+        
+        @keyframes rainbow {
+            0% { color: red; }
+            14% { color: orange; }
+            28% { color: yellow; }
+            42% { color: green; }
+            57% { color: blue; }
+            71% { color: indigo; }
+            85% { color: violet; }
+            100% { color: red; }
+        }
+        
+        @keyframes stretch {
+            0%, 50% { font-size: 40pt; }
+            25%, 75% { font-size: 80pt; }
+        }
+        
+        #home-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: white;
+            font-size: 18pt;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <a id="home-button" href="index.html">Home</a>
+    <h1>Jonathan Messer (Portfolio)</h1>
+    <div id="progress-container">
+        <div id="progress">
+            Webpage under progress
+        </div>
+    </div>
+	
+</body>
+</html>
