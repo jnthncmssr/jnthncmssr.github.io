@@ -15,12 +15,12 @@
         #header {
             text-align: center;
             padding: 2vw;
-            font-size: 3vw;
+            font-size: 2.5vw;
         }
         
         #nav {
             position: absolute;
-            top: 15vw;
+            top: 10vw;
             left: 50%;
             transform: translateX(-50%);
             max-width: 60vw;
@@ -29,8 +29,24 @@
         #nav a {
             display: block;
             text-decoration: none;
-            margin-bottom: 2vw;
-            font-size: 2vw;
+            margin-bottom: 1vw;
+            font-size: 1.8vw;
+        }
+
+        /* Media query for smaller devices */
+        @media (max-width: 600px) {
+            #header {
+                font-size: 4.5vw;
+                padding: 3vw;
+            }
+
+            #nav {
+                top: 15vw;
+            }
+
+            #nav a {
+                font-size: 3.5vw;
+            }
         }
         
         #box {
